@@ -9,6 +9,7 @@ if(playGame){
 	let playerChoice = prompt("Enter either rock,paper or scissors: ");
 	let computerChoice = choices[Math.floor(Math.random() * 3)];
 	//if you enter something invalid this will run
+	//also the choice to use includes() method
 	if(choices.indexOf(playerChoice) === -1){
 		alert("Please enter a valid value.");
 		game();
